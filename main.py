@@ -3,14 +3,17 @@ import json
 import discord
 import time
 
-url = 'https://www.binance.com/fr/futures-activity/leaderboard?type=myProfile&encryptedUid=08F22AF1161739C74509F9F38F188A8D'
-uneid = '3F45CB93EAF1326BC467A938E172122D'
+# a remplir
+encryptedUID = None
+uneid = None
+token = None
 
+url = f'https://www.binance.com/fr/futures-activity/leaderboard?type=myProfile&encryptedUid={encryptedUID}'
 # creation bot discord
 defIntents = discord.Intents.default()
 defIntents.members = True
 client = discord.Client(intents=defIntents)
-token = 'MTAyOTc4MzU2ODM4NzQyMDI0NA.GKGQQK.kfivCHOFvKhYODvtOXe6k4FBpJppf3QDkBHp2Q'
+
 
 
 def send_message(message):
